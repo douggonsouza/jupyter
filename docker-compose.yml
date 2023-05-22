@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+    app:
+        tty: true
+        build: .
+        container_name: datascience
+        volumes:
+          - ./:/home/douglas/datascience/
+        ports:
+          - ${DOCKER_HTTP_PORT}:80
