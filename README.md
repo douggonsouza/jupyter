@@ -24,3 +24,6 @@
   
   jupyter notebook --ip 0.0.0.0 --port 80 --allow-root
   
+  * Abrir no navegador a url e tokem que surge após o start do Jupyter
+
+  
