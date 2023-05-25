@@ -1,6 +1,4 @@
-# FROM douggsnafolha/jupyter
-# FROM jupyter/all-spark-notebook
-FROM jupyter/pyspark-notebook
+FROM douggsnafolha/spark:1.0.0
 
 WORKDIR /home/douglas/datascience/
 
