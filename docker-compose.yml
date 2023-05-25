@@ -3,7 +3,7 @@ services:
     app:
         tty: true
         build: .
-        container_name: datascience
+        container_name: spark
         volumes:
           - ./:/home/douglas/datascience/
         ports:

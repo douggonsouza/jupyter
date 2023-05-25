@@ -1,8 +1,6 @@
-FROM douggsnafolha/jupyter
-
-RUN apt-get update 
-
-RUN mkdir -m 777 /home/douglas/datascience
+# FROM douggsnafolha/jupyter
+# FROM jupyter/all-spark-notebook
+FROM jupyter/pyspark-notebook
 
 WORKDIR /home/douglas/datascience/
 
