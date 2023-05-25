@@ -1,19 +1,29 @@
-# jupyter
+# JUPYTER
 
-## Prepara ambiente
+## Ambiente
 
-### Variáveis
+  * Baixar projeto do GIT para a pasta de sua escolha.
 
-  Salvar arquivo .env_simple como .env
+  * Copiar o arquivo .env_simple, na raiz do projeto, como .env:
   
-### Construir conteiner e iniciar o docker
+  cp .env_simple .env
+  
+### Docker
+
+  * Depois de instalado o Docker e o Docker-Compose, dentro da pasta do projeto, baixar a imagem e iniciar o container:
 
   sudo docker-compose up --build
 
-## Starta o Jupyter
+## Iniciar o Jupyter
 
-. jupyter notebook --ip 0.0.0.0 --port 80 --allow-root 
+  * Entrar no container após seu carregamento:
+  
+  sudo docker exec -it datascience bash
+  
+  * Iniciar o Jupyter Notebook:
+  
+  jupyter notebook --ip 0.0.0.0 --port 80 --allow-root
+  
+  * Abrir no navegador a url e tokem que surge após o start do Jupyter
 
-### Abrir no navegador
-
-  http://127.0.0.1:80/?token=b587ba37ec4564dbfdc66a7068e7f910f8286b5b50e4f3dd
+  
