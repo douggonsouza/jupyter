@@ -10,7 +10,11 @@
   
 ### Docker
 
-  * Depois de instalado o Docker e o Docker-Compose, dentro da pasta do projeto, baixar a imagem e iniciar o container:
+  * Depois de instalado o Docker e o Docker-Compose no seu computador e corretamente, dentro da pasta do projeto, pelo terminal, baixar a imagem:
+
+  sudo docker-compose build
+  
+  * Iniciar o container:
 
   sudo docker-compose up --build
 
@@ -24,6 +28,6 @@
   
   jupyter notebook --ip 0.0.0.0 --port 80 --allow-root
   
-  * Abrir no navegador a url e tokem que surge após o start do Jupyter
+  * Após o start do Jupyter abrir no navegador a url e tokem que surge.
 
   
